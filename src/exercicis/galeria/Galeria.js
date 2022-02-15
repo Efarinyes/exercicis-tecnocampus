@@ -5,9 +5,6 @@ const fotos = ["dog.jpg", "dog-2.jpg", "dog-3.jpg", "dog-4.jpg", "dog-5.jpg"];
 function Galeria() {
   const initialClase = "img-thumbnail";
   const [clase, setClase] = useState(initialClase);
-  const [clicada, setClicada] = useState("");
-
-  const seleccioImatge = (foto) => {};
 
   return (
     <>
@@ -17,12 +14,12 @@ function Galeria() {
         <div className="cotenidor">
           <div className="row">
             {fotos.map((foto) => (
-              <div className="col-md-3" key={foto}>
+              <div className="col-md" key={foto}>
                 <img
                   src={`images/${foto}`}
                   alt="pajarito"
                   className={clase}
-                  onClick={() => seleccioImatge(foto)}
+                  onClick={() => setClase("imatge-gran")}
                 />
               </div>
             ))}
