@@ -1,6 +1,7 @@
 import "./App.css";
-import Comptador from "./exercicis/comptador/Comptador";
+// import Comptador from "./exercicis/comptador/Comptador";
 // import Galeria from "./exercicis/galeria/Galeria";
+import Acordio from "./exercicis/acordio/Acordio";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
         <div className="container">
           <div className="cotenidor">
             {/* <Galeria /> */}
-            <Comptador />
+            {/* <Comptador /> */}
+            <Acordio />
           </div>
         </div>
       </div>
