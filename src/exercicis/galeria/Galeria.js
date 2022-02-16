@@ -19,21 +19,17 @@ function Galeria() {
     <>
       <h1> Galeria de fotos </h1>
 
-      <div className="container">
-        <div className="cotenidor">
-          <div className="row">
-            {fotos.map((foto) => (
-              <div className="col-md" key={foto}>
-                <img
-                  src={`images/${foto}`}
-                  alt={`images/${foto}`}
-                  className={foto === clicat ? clase : initialClase}
-                  onClick={() => changeState(foto)}
-                />
-              </div>
-            ))}
+      <div className="row">
+        {fotos.map((foto) => (
+          <div className="col-md" key={foto}>
+            <img
+              src={`images/${foto}`}
+              alt={`images/${foto}`}
+              className={foto === clicat ? clase : initialClase}
+              onClick={() => changeState(foto)}
+            />
           </div>
-        </div>
+        ))}
       </div>
     </>
   );

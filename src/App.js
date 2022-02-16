@@ -1,5 +1,6 @@
 import "./App.css";
-import Galeria from "./exercicis/galeria/Galeria";
+import Comptador from "./exercicis/comptador/Comptador";
+// import Galeria from "./exercicis/galeria/Galeria";
 
 function App() {
   return (
@@ -8,7 +9,12 @@ function App() {
         <h1>Exercicis React </h1>
       </header>
       <div className="App">
-        <Galeria />
+        <div className="container">
+          <div className="cotenidor">
+            {/* <Galeria /> */}
+            <Comptador />
+          </div>
+        </div>
       </div>
     </>
   );

@@ -1,0 +1,52 @@
+.comptador-container {
+  width: 45%;
+  height: 500px;
+  border: 1px solid black;
+  margin: auto;
+}
+.display {
+  display: flex;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  height: 10%;
+  margin: 0 auto;
+  margin-top: 0.9rem;
+  border: 1px solid black;
+}
+
+.btnContenidor {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30%;
+  width: 100%;
+  height: 25%;
+}
+
+.boto {
+  display: flex;
+  font-size: 2rem;
+  align-items: center;
+  width: 35%;
+  height: 100%;
+  border-radius: 25px;
+  color: black;
+}
+.boto:hover {
+  background-color: bisque;
+}
+.botoMesCinc {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  width: 100%;
+}
+.botoCinc {
+  font-size: 2rem;
+  border-radius: 25px;
+  width: 85%;
+}
+.botoCinc:hover {
+  background-color: bisque;
+}
