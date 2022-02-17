@@ -6,14 +6,11 @@ function Galeria() {
   const initialClase = "img-thumbnail";
   const initialClicat = null;
 
-  const [clase, setClase] = useState(initialClase);
   const [clicat, setClicat] = useState(initialClicat);
 
   const changeState = (foto) => {
-    clase === "img-thumbnail"
-      ? setClase("imatge-gran")
-      : setClase(initialClase);
-    setClicat(foto);
+    if (foto === clicat) setClicat(null);
+    else setClicat(foto);
   };
   return (
     <>
@@ -25,7 +22,7 @@ function Galeria() {
             <img
               src={`images/${foto}`}
               alt={`images/${foto}`}
-              className={foto === clicat ? clase : initialClase}
+              className={foto === clicat ? "imatge-gran" : initialClase}
               onClick={() => changeState(foto)}
             />
           </div>

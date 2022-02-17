@@ -1,4 +1,5 @@
 import "./App.css";
+//
 // import Comptador from "./exercicis/comptador/Comptador";
 // import Galeria from "./exercicis/galeria/Galeria";
 import Acordio from "./exercicis/acordio/Acordio";
