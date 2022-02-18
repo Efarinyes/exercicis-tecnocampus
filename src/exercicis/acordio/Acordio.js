@@ -24,7 +24,7 @@ function Acordio() {
         <div
           className={
             (0 === textClicat ? "paragrafVista" : initialText) +
-            " animate__animated animate__fadeInDown"
+            " animate__animated animate__fadeIn"
           }
         >
           Soc el text amagat 1
@@ -35,7 +35,7 @@ function Acordio() {
         <div
           className={
             (1 === textClicat ? "paragrafVista" : initialText) +
-            " animate__animated animate__bounceInRight"
+            " animate__animated animate__fadeIn"
           }
         >
           Soc el text amagat 2
@@ -46,7 +46,7 @@ function Acordio() {
         <div
           className={
             (2 === textClicat ? "paragrafVista" : initialText) +
-            " animate__animated animate__bounceInLeft"
+            " animate__animated animate__fadeIn"
           }
         >
           Soc el text amagat 3

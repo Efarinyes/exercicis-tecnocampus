@@ -1,0 +1,17 @@
+
+
+.sliderContainer {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 10%;
+    height: 90%;
+    margin: auto;
+    margin-top: 10rem;;
+    overflow: hidden;
+}
+.imageCarousel {
+    width: 249.28px;
+    height: 143.98px;
+}

@@ -41,7 +41,7 @@ function SegonAcordio() {
               {disp.titol}
             </h2>
             <div
-              className={(index === textClicat ? "paragrafVista" : initialText) + ' animate__animated animate__fadeInDown'}
+              className={(index === textClicat ? "paragrafVista" : initialText) + ' animate__animated animate__fadeIn'}
             >
               {disp.text}
             </div>

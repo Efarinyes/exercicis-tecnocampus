@@ -2,9 +2,10 @@ import "./App.css";
 //
 // import Comptador from "./exercicis/comptador/Comptador";
 // import Galeria from "./exercicis/galeria/Galeria";
-import Acordio from "./exercicis/acordio/Acordio";
+//import Acordio from "./exercicis/acordio/Acordio";
 
-import SegonAcordio from './exercicis/acordio/SegonAcordio';
+// import SegonAcordio from './exercicis/acordio/SegonAcordio';
+import Carousel from "./exercicis/carousel/Carousel";
 
 function App() {
   return (
@@ -17,8 +18,9 @@ function App() {
           <div className="cotenidor">
             {/* <Galeria /> */}
             {/* <Comptador /> */}
-            <Acordio />
-            <SegonAcordio />
+            {/* <Acordio />
+            <SegonAcordio /> */}
+            <Carousel />
           </div>
         </div>
       </div>
