@@ -4,6 +4,8 @@ import "./App.css";
 // import Galeria from "./exercicis/galeria/Galeria";
 import Acordio from "./exercicis/acordio/Acordio";
 
+import SegonAcordio from './exercicis/acordio/SegonAcordio';
+
 function App() {
   return (
     <>
@@ -16,6 +18,7 @@ function App() {
             {/* <Galeria /> */}
             {/* <Comptador /> */}
             <Acordio />
+            <SegonAcordio />
           </div>
         </div>
       </div>

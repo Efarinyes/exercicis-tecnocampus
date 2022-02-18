@@ -12,24 +12,7 @@ function Acordio() {
     else setTextClicat(text);
   };
 
-  const displays = [
-    {
-      titol: "Sota hi ha text",
-      text: "Soc el text de sota",
-    },
-    {
-      titol: "Sota hi ha un altre text",
-      text: "Soc un altre text",
-    },
-    {
-      titol: "Sota el tercer titular",
-      text: "Soc el tercer text",
-    },
-    {
-      titol: "Sota el darrer titular",
-      text: "Soc el darrer text",
-    },
-  ];
+  
   return (
     <>
       <h1> Acordió </h1>
@@ -70,22 +53,8 @@ function Acordio() {
         </div>
         <hr />
       </div>
-      <h1>Acordió 2</h1>
-      <hr />
-      <div className="itemsAcordio">
-        {displays.map((disp, index) => (
-          <>
-            <h2 onClick={() => mostrarText(index)} className="hacdos">
-              {disp.titol}
-            </h2>
-            <div
-              className={index === textClicat ? "paragrafVista" : initialText}
-            >
-              {disp.text}
-            </div>
-          </>
-        ))}
-      </div>
+
+      
     </>
   );
 }
