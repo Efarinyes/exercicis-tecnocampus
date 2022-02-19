@@ -37,7 +37,8 @@
   }
 }
 .contenidor {
-  min-width: 100%;
+  width: 100%;
+  
 }
 .imatge-gran {
   width: 400px;
