@@ -1,5 +1,5 @@
 import React from "react";
-
+import { useState } from 'react';
 import "./carousel.css";
 
 
@@ -12,8 +12,16 @@ import left from './../../img/left.png';
 import right from './../../img/right.png';
 
 function Carousel() {
+
+  const [mouSlide, setMouSlide] = useState(false);
+
+  const showSlides = (slide) => {
+    
+    };
+
   return (
     <>
+    
       <h1> Carrussel </h1>
       <hr />
       <p className="titol"> Slider de rellotges</p>
@@ -72,7 +80,7 @@ function Carousel() {
           <button className = 'boto'>
                 <img src={left} alt="Arrow-left"/>
           </button>
-          <button className = 'boto' id='dreta'>
+          <button className = 'boto' id='dreta' onClick= {(slide) => showSlides()}>
           <img src={right} alt="Arrow-right"/>
           </button>
         </div>

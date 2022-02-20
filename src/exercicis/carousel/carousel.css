@@ -20,8 +20,8 @@ img {
     z-index: 10;
     max-height: 500px;
     position: relative;
-    
 }
+
 .sliderContainer {
     position:relative;
     overflow: hidden;
