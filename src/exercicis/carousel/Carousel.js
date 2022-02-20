@@ -13,12 +13,6 @@ import right from './../../img/right.png';
 
 function Carousel() {
 
-  const [mouSlide, setMouSlide] = useState(false);
-
-  const showSlides = (slide) => {
-    
-    };
-
   return (
     <>
     
@@ -80,7 +74,7 @@ function Carousel() {
           <button className = 'boto'>
                 <img src={left} alt="Arrow-left"/>
           </button>
-          <button className = 'boto' id='dreta' onClick= {(slide) => showSlides()}>
+          <button className = 'boto' id='dreta'>
           <img src={right} alt="Arrow-right"/>
           </button>
         </div>
