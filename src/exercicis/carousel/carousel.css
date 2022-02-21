@@ -1,69 +1,70 @@
 img {
-    width: 100%;
-    vertical-align: top;
+  width: 100%;
+  vertical-align: top;
 }
 .titol {
-    font-size: 1.1rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: .7rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.7rem;
 }
 
 .contenidorSlideShow {
-    display: flex;
-    flex-wrap: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
 }
 .slides {
-    min-width: 100%;
-    overflow: hidden;
-    transition: .3s ease all;
-    z-index: 10;
-    max-height: 500px;
-    position: relative;
+  min-width: 100%;
+  overflow: hidden;
+  transition: 0.3s ease all;
+  z-index: 10;
+  max-height: 500px;
+  position: relative;
 }
 
 .sliderContainer {
-    position:relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 .controls {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    top: 0;
-    z-index: 30;
-    width: 100%;
-    height: 100%
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  z-index: 30;
+  width: 100%;
+  height: 100%;
 }
 .boto {
-    background: none;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    width: 50px;
-    height: 100%;
-    text-align: center;
-    position: absolute;
-    transition: .3s ease all;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  width: 50px;
+  height: 25%;
+  text-align: center;
+  position: absolute;
+  transition: 0.3s ease all;
+}
+.boto:hover {
+  width: 75px;
 }
 #dreta {
-    right: 0;
+  right: 0;
 }
 
 .textSlide {
-    background: rgba(0,0,0,.4);
-    color: #fff;
-    width: 100%;
-    padding-top: 7px;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  width: 100%;
+  padding-top: 7px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
 }
 @media (max-width: 700px) {
-    .textSlide {
-        position: relative;
-        background: black;
-    }
+  .textSlide {
+    position: relative;
+    background: black;
+  }
 }
-
-

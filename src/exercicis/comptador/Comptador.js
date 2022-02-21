@@ -9,7 +9,7 @@ function Comptador() {
   };
   const sumaCinc = () => {
     setComptador(comptador + 5);
-    if (comptador > 5) setComptador(NaN);
+    if (comptador > 5) setComptador(5);
   };
 
   const resta = () => {
@@ -24,10 +24,10 @@ function Comptador() {
       <div className="comptador-container">
         <div className="display"> {comptador} </div>
         <div className="btnContenidor">
-          <button type="button" className="boto" onClick={suma}>
+          <button type="button" className="botoComptador" onClick={suma}>
             +1
           </button>
-          <button type="button" className="boto" onClick={resta}>
+          <button type="button" className="botoComptador" onClick={resta}>
             -1
           </button>
         </div>

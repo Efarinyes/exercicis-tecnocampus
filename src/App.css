@@ -21,9 +21,11 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: whitesmoke;
 }
-
+.App-header ul li {
+  margin-right: 30px;
+}
 .App-link {
   color: #61dafb;
 }
@@ -38,10 +40,18 @@
 }
 .contenidor {
   width: 100%;
-  
 }
 .imatge-gran {
   width: 400px;
   height: auto;
   padding: 5px;
+}
+ul li {
+  list-style: none;
+  margin-top: 2rem;
+}
+li a {
+  text-decoration: none;
+  margin-right: 1rem;
+  color: whitesmoke;
 }

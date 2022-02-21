@@ -1,29 +1,33 @@
 import "./App.css";
-//
-// import Comptador from "./exercicis/comptador/Comptador";
-// import Galeria from "./exercicis/galeria/Galeria";
-//import Acordio from "./exercicis/acordio/Acordio";
+import { Routes, Route, HashRouter } from "react-router-dom";
 
-// import SegonAcordio from './exercicis/acordio/SegonAcordio';
+import Galeria from "./exercicis/galeria/Galeria";
+import Acordio from "./exercicis/acordio/Acordio";
+import Layout from "./Layout";
+import SegonAcordio from "./exercicis/acordio/SegonAcordio";
 import Carousel from "./exercicis/carousel/Carousel";
+import Comptador from "./exercicis/comptador/Comptador";
 
 function App() {
   return (
     <>
-      <header className="App-header">
-        <h1>Exercicis React </h1>
-      </header>
-      <div className="App">
-        <div className="container">
-          <div className="cotenidor">
-            {/* <Galeria /> */}
-            {/* <Comptador /> */}
-            {/* <Acordio />
-            <SegonAcordio /> */}
-            <Carousel />
-          </div>
-        </div>
-      </div>
+      <HashRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route path="Acordio" element={<Acordio />} />
+
+            <Route path="SegonAcordio" element={<SegonAcordio />} />
+
+            <Route path="Galeria" element={<Galeria />} />
+
+            <Route path="Carousel" element={<Carousel />} />
+
+            <Route path="Comptador" element={<Comptador />} />
+
+            <Route path="Carousel" element={<Carousel />} />
+          </Route>
+        </Routes>
+      </HashRouter>
     </>
   );
 }
