@@ -28,6 +28,7 @@ function App() {
           </Route>
         </Routes>
       </HashRouter>
+      <h1 className='App'> Llistat d'exercicis del curs del Tecnocampus</h1>
     </>
   );
 }
