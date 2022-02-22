@@ -1,5 +1,4 @@
-
-import { useState } from 'react';
+import { useState } from "react";
 import "./acordio.css";
 
 const initialText = "paragraf";
@@ -36,16 +35,19 @@ function SegonAcordio() {
       <hr />
       <div className="itemsAcordio">
         {displays.map((disp, index) => (
-          <>
+          <div key={index}>
             <h2 onClick={() => mostrarTextAcordio(index)} className="hacdos">
               {disp.titol}
             </h2>
             <div
-              className={(index === textClicat ? "paragrafVista" : initialText) + ' animate__animated animate__fadeIn'}
+              className={
+                (index === textClicat ? "paragrafVista" : initialText) +
+                " animate__animated animate__fadeIn"
+              }
             >
               {disp.text}
             </div>
-          </>
+          </div>
         ))}
       </div>
     </>

@@ -15,12 +15,12 @@ function Carousel() {
   const [currentImage, setCurrentImage] = useState(0);
 
   const mouFoto = (direccio) => {
-    console.log(direccio);
+    // console.log(direccio);
     if (direccio === "right") setCurrentImage(currentImage + 1);
     else {
       setCurrentImage(currentImage - 1);
     }
-    console.log(currentImage);
+    // console.log(currentImage);
   };
   return (
     <>
@@ -35,7 +35,8 @@ function Carousel() {
               style={{ left: -currentImage * 100 + "%" }}
               key={index}
             >
-              <img src={`images/${imatge}`} alt={`imaages/${imatge}`} />
+              <img src={`images/${imatge}`} alt={`images/${imatge}`} />
+              <p className="textSlide"> Mostra de rellotges intel·ligents</p>
             </div>
           ))}
         </div>

@@ -10,10 +10,12 @@ function Layout() {
             <li>
               <Link to="/">Inici</Link>
               <Link to="Acordio">Acordio</Link>
-              <Link to="Comptador">Comptador</Link>
               <Link to="SegonAcordio">SegonAcordio</Link>
+              <Link to="Comptador">Comptador</Link>
               <Link to="Galeria">Galeria</Link>
               <Link to="Carousel">Carousel</Link>
+              <Link to="Toggle">Toggle</Link>
+              <Link to="ToggleGroup">ToggleGroup</Link>
             </li>
           </ul>
         </div>

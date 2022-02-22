@@ -7,6 +7,8 @@ import Layout from "./Layout";
 import SegonAcordio from "./exercicis/acordio/SegonAcordio";
 import Carousel from "./exercicis/carousel/Carousel";
 import Comptador from "./exercicis/comptador/Comptador";
+import Toggle from "./exercicis/toggle/Toggle";
+import ToggleGroup from "./exercicis/toogleGroup/ToggleGroup";
 
 function App() {
   return (
@@ -25,10 +27,13 @@ function App() {
             <Route path="Comptador" element={<Comptador />} />
 
             <Route path="Carousel" element={<Carousel />} />
+
+            <Route path="Toggle" element={<Toggle />} />
+
+            <Route path="ToggleGroup" element={<ToggleGroup />} />
           </Route>
         </Routes>
       </HashRouter>
-      <h1 className='App'> Llistat d'exercicis del curs del Tecnocampus</h1>
     </>
   );
 }
