@@ -2,11 +2,12 @@ import "./toggleGroup.css";
 import { useState } from "react";
 
 function ToggleGroup() {
-  const [botoClicat, setBotoClicat] = useState();
-
   const textos = ["Boto-1", "Boto-2", "Boto-3"];
+  const [textBoto, setTextBoto] = useState(textos[0]);
+  // const [colorBoto, setColorBoto] = useState("toggleGroupButton");
+
   const changeTextColor = (text) => {
-    console.log(text);
+    setTextBoto(text);
   };
 
   return (
@@ -17,14 +18,14 @@ function ToggleGroup() {
         <button
           className="toggleGroupButton"
           onClick={() => changeTextColor(text)}
-          key={text}
+          key={index}
         >
           {text}
         </button>
       ))}
 
       <div className="textSortidaToggleGroup">
-        <h2> Text Boto </h2>
+        <h2> {textBoto} </h2>
       </div>
     </>
   );
