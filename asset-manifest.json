@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/exercicis-tecnocampus/static/css/main.048cd250.css",
-    "main.js": "/exercicis-tecnocampus/static/js/main.b63b0641.js",
-    "static/js/787.1031ca89.chunk.js": "/exercicis-tecnocampus/static/js/787.1031ca89.chunk.js",
-    "index.html": "/exercicis-tecnocampus/index.html",
-    "main.048cd250.css.map": "/exercicis-tecnocampus/static/css/main.048cd250.css.map",
-    "main.b63b0641.js.map": "/exercicis-tecnocampus/static/js/main.b63b0641.js.map",
-    "787.1031ca89.chunk.js.map": "/exercicis-tecnocampus/static/js/787.1031ca89.chunk.js.map"
+    "main.css": "/static/css/main.048cd250.css",
+    "main.js": "/static/js/main.a9601190.js",
+    "static/js/787.1031ca89.chunk.js": "/static/js/787.1031ca89.chunk.js",
+    "index.html": "/index.html",
+    "main.048cd250.css.map": "/static/css/main.048cd250.css.map",
+    "main.a9601190.js.map": "/static/js/main.a9601190.js.map",
+    "787.1031ca89.chunk.js.map": "/static/js/787.1031ca89.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.048cd250.css",
-    "static/js/main.b63b0641.js"
+    "static/js/main.a9601190.js"
   ]
 }
