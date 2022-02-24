@@ -9,6 +9,7 @@ import Carousel from "./exercicis/carousel/Carousel";
 import Comptador from "./exercicis/comptador/Comptador";
 import Toggle from "./exercicis/toggle/Toggle";
 import ToggleGroup from "./exercicis/toogleGroup/ToggleGroup";
+import ArrayOne from "./exercicis/MetodesArrays/ArrayOne";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             <Route path="Toggle" element={<Toggle />} />
 
             <Route path="ToggleGroup" element={<ToggleGroup />} />
+            <Route path="ArrayOne" element={<ArrayOne />} />
           </Route>
         </Routes>
       </HashRouter>

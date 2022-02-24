@@ -16,6 +16,7 @@ function Layout() {
               <Link to="Carousel">Carousel</Link>
               <Link to="Toggle">Toggle</Link>
               <Link to="ToggleGroup">ToggleGroup</Link>
+              <Link to="ArrayOne"> Array one </Link>
             </li>
           </ul>
         </div>
@@ -23,6 +24,11 @@ function Layout() {
       <div className="App">
         <div className="container">
           <div className="cotenidor">
+            <br />
+            <h2>
+              Enllaços als exercicis del curs FrontEnd del Tecnocampus amb React
+              JS
+            </h2>
             <Outlet />
 
             {/* <Galeria /> */}
