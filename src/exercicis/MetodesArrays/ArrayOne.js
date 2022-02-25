@@ -73,7 +73,7 @@ function ArrayOne() {
         </div>
       </div>
       <div className="row">
-        <h5> Exercici 3 i 4 </h5>
+        <h5> Exercicis 3 i 4 </h5>
         <p>
           <b>Fruites que tenim:</b> {fruitesOriginal.join(" - ")}
         </p>
@@ -84,18 +84,7 @@ function ArrayOne() {
           <b>Fruites Repetides: </b> {fruitesRepetides.join(" - ")}
         </p>
       </div>
-      <div className="row">
-        <h5> Exercici 5 </h5>
-        <p>
-          <b>Fruites que tenim:</b> {fruitesOriginal.join(" - ")}
-        </p>
-        <p>
-          <b>Fruites que ens queden: </b> {fruitesFinal.join(" - ")}
-        </p>
-        <p>
-          <b>Fruites Repetides: </b> {fruitesRepetides.join(" - ")}
-        </p>
-      </div>
+      
     </>
   );
 }
