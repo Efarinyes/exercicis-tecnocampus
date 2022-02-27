@@ -10,6 +10,7 @@ import Comptador from "./exercicis/comptador/Comptador";
 import Toggle from "./exercicis/toggle/Toggle";
 import ToggleGroup from "./exercicis/toogleGroup/ToggleGroup";
 import ArrayOne from "./exercicis/MetodesArrays/ArrayOne";
+import TresEnRalla from "./exercicis/tresEnRalla/TresEnRalla";
 
 function App() {
   return (
@@ -32,7 +33,10 @@ function App() {
             <Route path="Toggle" element={<Toggle />} />
 
             <Route path="ToggleGroup" element={<ToggleGroup />} />
+
             <Route path="ArrayOne" element={<ArrayOne />} />
+            
+            <Route path="TresEnRalla" element={<TresEnRalla />} />
           </Route>
         </Routes>
       </HashRouter>
