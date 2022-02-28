@@ -7,9 +7,9 @@ function Toggle() {
 
   const canviaText = () => {
     textBoto === "Clica" ? setTextBoto("Has clicat") : setTextBoto("Clica");
-    colorBoto === "toggleButton"
+    colorBoto === "toggleButtonSingle"
       ? setColorBoto("red")
-      : setColorBoto("toggleButton");
+      : setColorBoto("toggleButtonSingle");
   };
 
   return (

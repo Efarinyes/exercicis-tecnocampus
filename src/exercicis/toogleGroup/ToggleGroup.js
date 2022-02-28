@@ -4,10 +4,13 @@ import { useState } from "react";
 function ToggleGroup() {
   const textos = ["Boto-1", "Boto-2", "Boto-3"];
   const [textBoto, setTextBoto] = useState(textos[0]);
-  // const [colorBoto, setColorBoto] = useState("toggleGroupButton");
+  const [colorBoto, setColorBoto] = useState("toggleGroupButton");
 
   const changeTextColor = (text) => {
     setTextBoto(text);
+    colorBoto === "toggleButton"
+      ? setColorBoto("red")
+      : setColorBoto("toggleButton");
   };
 
   return (
@@ -16,7 +19,7 @@ function ToggleGroup() {
       <hr />
       {textos.map((text, index) => (
         <button
-          className="toggleGroupButton"
+          className={colorBoto}
           onClick={() => changeTextColor(text)}
           key={index}
         >

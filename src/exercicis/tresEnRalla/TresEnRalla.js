@@ -8,7 +8,7 @@ const MySwal = withReactContent(Swal);
 function TresEnRalla() {
   const [torn, setTorn] = useState("X");
   const [casella, setCasella] = useState(Array(9).fill(""));
-  const [guanyador, setGuanyador] = useState();
+  const [guanyador, setGuanyador] = useState(null);
 
   const comprovaGuanyador = (quadricula) => {
     let combinacions = {
@@ -39,7 +39,7 @@ function TresEnRalla() {
           quadricula[pattern[1]] === quadricula[pattern[2]]
         ) {
           MySwal.fire({
-            title: 'Guanyador',
+            title: "Guanyador",
             icon: "success",
             text: "Bona partida",
           });
@@ -51,6 +51,7 @@ function TresEnRalla() {
   };
 
   const casellaClicada = (num) => {
+    if (guanyador) return;
     if (casella[num] !== "") {
       MySwal.fire({
         title: <p>No es pot</p>,
@@ -78,10 +79,11 @@ function TresEnRalla() {
   const reseteja = () => {
     setGuanyador(null);
     setCasella(Array(9).fill(""));
+    setTorn("X");
   };
 
   const Casella = ({ num }) => {
-    return <td onClick={() => casellaClicada(num)} > {casella[num]} </td>;
+    return <td onClick={() => casellaClicada(num)}> {casella[num]} </td>;
   };
 
   return (
@@ -118,8 +120,7 @@ function TresEnRalla() {
               onClick={() => reseteja()}
               className="btn btn-outline-success"
             >
-              {" "}
-              Vols tornar a jugar?{" "}
+              Vols tornar a jugar?
             </button>
           </>
         )}

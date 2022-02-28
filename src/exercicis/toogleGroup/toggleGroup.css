@@ -12,6 +12,20 @@
   font-size: 2rem;
 }
 
+.toggleButton {
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  background-color: #4caf50; /* Green */
+  border: none;
+  border-radius: 20px;
+  color: blue;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2rem;
+}
+
 .textSortidaToggleGroup {
   margin: 0 auto;
   width: 33%;
@@ -21,10 +35,12 @@
 }
 
 .red {
-  color: red;
-  background-color: yellowgreen;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  background-color: #4caf50; /* Green */
   border: none;
   border-radius: 20px;
+  color: red;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;

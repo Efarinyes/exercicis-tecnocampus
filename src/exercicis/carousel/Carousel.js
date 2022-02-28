@@ -15,12 +15,11 @@ function Carousel() {
   const [currentImage, setCurrentImage] = useState(0);
 
   const mouFoto = (direccio) => {
-    // console.log(direccio);
-    if (direccio === "right") setCurrentImage(currentImage + 1);
-    else {
-      setCurrentImage(currentImage - 1);
-    }
-    // console.log(currentImage);
+    let increment = direccio === "right" ? +1 : -1;
+    let nextImage = currentImage + increment;
+    let imageCount = imatges.length;
+    nextImage = (nextImage + imageCount) % imageCount;
+    setCurrentImage(nextImage);
   };
   return (
     <>
