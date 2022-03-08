@@ -12,6 +12,7 @@ function Layout() {
               <Link to="Acordio">Acordio</Link>
               <Link to="SegonAcordio">SegonAcordio</Link>
               <Link to="Comptador">Comptador</Link>
+              <Link to="Comptador-Redux">Compatador Redux</Link>
               <Link to="Galeria">Galeria</Link>
               <Link to="Carousel">Carousel</Link>
               <Link to="Toggle">Toggle</Link>

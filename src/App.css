@@ -56,3 +56,14 @@ li a {
   margin-right: 1rem;
   color: whitesmoke;
 }
+
+.counterButon {
+  width: 10rem;
+  border-radius: 15px;
+  background-color: cadetblue;
+  border: none;
+}
+
+.lastButton {
+  margin-bottom: 2rem;
+}

@@ -11,6 +11,7 @@ import Toggle from "./exercicis/toggle/Toggle";
 import ToggleGroup from "./exercicis/toogleGroup/ToggleGroup";
 import ArrayOne from "./exercicis/MetodesArrays/ArrayOne";
 import TresEnRalla from "./exercicis/tresEnRalla/TresEnRalla";
+import ComptadorRedux from "./exercicis/comptador-redux/ComptadorRedux";
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
 
             <Route path="Comptador" element={<Comptador />} />
 
+            <Route path="Comptador-Redux" element={<ComptadorRedux />} />
+
             <Route path="Carousel" element={<Carousel />} />
 
             <Route path="Toggle" element={<Toggle />} />
@@ -35,7 +38,7 @@ function App() {
             <Route path="ToggleGroup" element={<ToggleGroup />} />
 
             <Route path="ArrayOne" element={<ArrayOne />} />
-            
+
             <Route path="TresEnRalla" element={<TresEnRalla />} />
           </Route>
         </Routes>
