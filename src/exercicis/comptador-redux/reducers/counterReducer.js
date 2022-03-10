@@ -7,12 +7,12 @@ const counterReducer = (state = initalState, action) => {
     case "INCREASE_COUNTER":
       return {
         ...state,
-        count: state.count + action.payload,
+        count: Math.max(0, Math.min(10, state.count + action.payload)),
       };
     case "DECREASE_COUNTER":
       return {
         ...state,
-        count: state.count - action.payload,
+        count: Math.max(0, Math.min(10, state.count - action.payload)),
       };
 
     case "RESET":
