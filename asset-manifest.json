@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/exercicis-tecnocampus/static/css/main.d5d820ff.css",
-    "main.js": "/exercicis-tecnocampus/static/js/main.29cccf24.js",
+    "main.js": "/exercicis-tecnocampus/static/js/main.5a28123a.js",
     "static/js/787.1031ca89.chunk.js": "/exercicis-tecnocampus/static/js/787.1031ca89.chunk.js",
     "index.html": "/exercicis-tecnocampus/index.html",
     "main.d5d820ff.css.map": "/exercicis-tecnocampus/static/css/main.d5d820ff.css.map",
-    "main.29cccf24.js.map": "/exercicis-tecnocampus/static/js/main.29cccf24.js.map",
+    "main.5a28123a.js.map": "/exercicis-tecnocampus/static/js/main.5a28123a.js.map",
     "787.1031ca89.chunk.js.map": "/exercicis-tecnocampus/static/js/787.1031ca89.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d5d820ff.css",
-    "static/js/main.29cccf24.js"
+    "static/js/main.5a28123a.js"
   ]
 }
