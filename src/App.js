@@ -1,5 +1,5 @@
 import "./App.css";
-import { Routes, Route, HashRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 import Galeria from "./exercicis/galeria/Galeria";
 import Acordio from "./exercicis/acordio/Acordio";
@@ -16,7 +16,7 @@ import ComptadorRedux from "./exercicis/comptador-redux/ComptadorRedux";
 function App() {
   return (
     <>
-      <HashRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route path="Acordio" element={<Acordio />} />
@@ -42,7 +42,7 @@ function App() {
             <Route path="TresEnRalla" element={<TresEnRalla />} />
           </Route>
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </>
   );
 }
