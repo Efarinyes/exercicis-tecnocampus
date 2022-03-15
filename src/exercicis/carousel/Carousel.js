@@ -1,7 +1,12 @@
 import { useState } from "react";
 import "./carousel.css";
 
-const imatges = ["1.jpg", "2.jpg", "3.jpg", "4.jpg"];
+const imatges = [
+  "/images/1.jpg",
+  "/images/2.jpg",
+  "/images/3.jpg",
+  "/images/4.jpg",
+].map((imatge) => process.env.PUBLIC_URL + imatge);
 
 // imatges
 // import img1 from "./../../img/1.jpg";
@@ -34,7 +39,7 @@ function Carousel() {
               style={{ left: -currentImage * 100 + "%" }}
               key={index}
             >
-              <img src={`images/${imatge}`} alt={`images/${imatge}`} />
+              <img src={imatge} alt={imatge} />
               <p className="textSlide"> Mostra de rellotges intel·ligents</p>
             </div>
           ))}
@@ -43,14 +48,14 @@ function Carousel() {
         <div className="controls">
           <button className="boto">
             <img
-              src="images/left.png"
+              src={process.env.PUBLIC_URL + "/images/left.png"}
               alt="Arrow-left"
               onClick={() => mouFoto("left")}
             />
           </button>
           <button className="boto" id="dreta">
             <img
-              src="images/right.png"
+              src={process.env.PUBLIC_URL + "/images/right.png"}
               alt="Arrow-right"
               onClick={() => mouFoto("right")}
             />

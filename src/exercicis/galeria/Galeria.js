@@ -1,6 +1,12 @@
 import { useState } from "react";
 
-const fotos = ["dog.jpg", "dog-2.jpg", "dog-3.jpg", "dog-4.jpg", "dog-5.jpg"];
+const fotos = [
+  "/images/dog.jpg",
+  "/images/dog-2.jpg",
+  "/images/dog-3.jpg",
+  "/images/dog-4.jpg",
+  "/images/dog-5.jpg",
+].map((foto) => process.env.PUBLIC_URL + foto);
 
 function Galeria() {
   const initialClase = "img-thumbnail";
@@ -20,8 +26,8 @@ function Galeria() {
         {fotos.map((foto) => (
           <div className="col-md" key={foto}>
             <img
-              src={`images/${foto}`}
-              alt={`images/${foto}`}
+              src={foto}
+              alt={foto}
               className={foto === clicat ? "imatge-gran" : initialClase}
               onClick={() => changeState(foto)}
             />
