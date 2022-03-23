@@ -3,7 +3,7 @@ import "./toggle.css";
 
 function Toggle() {
   const [textBoto, setTextBoto] = useState("Clica");
-  const [colorBoto, setColorBoto] = useState("toggleButton");
+  const [colorBoto, setColorBoto] = useState("toggleButtonSingle");
 
   const canviaText = () => {
     textBoto === "Clica" ? setTextBoto("Has clicat") : setTextBoto("Clica");
