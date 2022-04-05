@@ -42,6 +42,10 @@ function Calculadora() {
 
   return (
     <div className="calculadora">
+      <h2>
+        {" "}
+        <em>"Taxas Instrument"</em>{" "}
+      </h2>
       <div className="display">{display}</div>
       <div className="numeros">
         {numeros.map((numero) => (
