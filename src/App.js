@@ -12,6 +12,7 @@ import ToggleGroup from "./exercicis/toogleGroup/ToggleGroup";
 import ArrayOne from "./exercicis/MetodesArrays/ArrayOne";
 import TresEnRalla from "./exercicis/tresEnRalla/TresEnRalla";
 import ComptadorRedux from "./exercicis/comptador-redux/ComptadorRedux";
+import Calculadora from "./exercicis/calculadora/Calculadora";
 
 function App() {
   return (
@@ -40,6 +41,8 @@ function App() {
             <Route path="ArrayOne" element={<ArrayOne />} />
 
             <Route path="TresEnRalla" element={<TresEnRalla />} />
+
+            <Route path="Calculadora" element={<Calculadora />} />
           </Route>
         </Routes>
       </BrowserRouter>

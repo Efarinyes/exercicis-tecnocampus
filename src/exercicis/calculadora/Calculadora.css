@@ -1,0 +1,38 @@
+.calculadora {
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.display {
+  text-align: right;
+  background-color: darkblue;
+  color: white;
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding-right: 0.3rem;
+  font-family: monospace;
+}
+
+.botons,
+.numeros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: orange;
+}
+
+:is(.botons, .numeros) button {
+  background-color: lightgoldenrodyellow;
+  cursor: pointer;
+  flex: 0 0 33%;
+  padding: 20px 0;
+}
+.botons button {
+  background-color: aquamarine;
+}
+.numeros button:hover {
+  background-color: whitesmoke;
+}
+.numeros button:active {
+  background-color: gray;
+}

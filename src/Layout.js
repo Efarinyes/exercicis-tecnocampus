@@ -19,6 +19,7 @@ function Layout() {
               <Link to="ToggleGroup">ToggleGroup</Link>
               <Link to="ArrayOne"> Array one </Link>
               <Link to="TresEnRalla"> Tres en ratlla </Link>
+              <Link to="Calculadora"> Calculadora </Link>
             </li>
           </ul>
         </div>
